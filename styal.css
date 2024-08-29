@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+    text-decoration: none;
+    list-style: none;
+   }
+
+
+.sidebar{
+ width: 300px;
+ height: 100vh;
+ background-color: bisque;
+ position: fixed;
+ transform: translateX(0px);
+}
+
+.hidden{
+    transform: translateX(-100%);
+}
+
+header{
+    height: 8vh;
+    background-color: lightblue;
+    margin-left: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.sing{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(62, 63, 63);
+    color: white;
+}
+
+.sidebar i{
+    margin:30px;
+}
+
+.sidebar h2{
+    margin-top: 5px;
+}
+
+.con{
+    margin: 20px 0px 0px 30px;
+}
+
+.con1{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+.shifted{
+    margin-left: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo i{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    padding: 10px 15px;
+}
+p{
+    margin-left: 300px;
+}
+
+.peara{
+    margin-left: 0;
+}
+
+success {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 15px;
+    max-width: 400px;
+    margin: 50px auto 0;
+    display: none;
+}
+success__icon {
+    display: block;
+    margin: auto;
+}
+success__message {
+    color: #757575;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0;
+}
+form {
+    background-color: #fff;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    padding: 30px 15px;
+    max-width: 400px;
+    margin: 50px auto 0;
+}
+form > div {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+label span {
+    color: red;
+}
+input, textarea {
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    cursor: pointer;
+}
+.error-message {
+    color: red;
+    margin-top: 8px;
+    font-size: 14px;
+    display: none;
+}
+.input-error {
+    border-color: red;
+}

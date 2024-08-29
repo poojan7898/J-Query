@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fist page</title>
+    <link rel="stylesheet" href="styal.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sing">
+        <i class="fa-solid fa-user fa-xl"></i>
+        <h2>Hello,Sing in</h2>
+    </div>
+
+    <div class="con">
+    <h2>Trending</h2>
+    <br>
+    Best Sellers
+    <br>
+    <br>
+    New Releases
+    <br>
+    <br>
+    Movers and Shakers
+    </div>
+    <br>
+    <hr>
+     <br>
+    <div class="con1">
+        <h3>Digital Content and Devices</h3>
+        <br>
+        <br>
+        Amazon miniTV-FREE entertainment
+        <br>
+        <br>
+        Echo & Alexa
+        <br>
+        <br>
+        Fire TV
+        <br>
+        <br>
+        Kindle E-Readers & eBooks
+        <br>
+        <br>
+        Audible Audiobooks
+        <br>
+        <br>
+        Amazon Prime Video
+        <br>
+        <br>
+        Amazon Prime Music
+        <br>
+        <br>
+    </div>
+    <hr>
+    </div>
+     
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bars" id="btn"></i>
+         <h1>Logo</h1>
+        </div>
+    
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Services</li>
+                <li><i class="fa-solid fa-right-to-bracket fa-xl" style="color: #050505;" class="sing1"></i></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquam accusamus et cum est excepturi molestiae sequi ullam expedita amet corporis dolore. Ipsam natus inventore placeat perspiciatis, officia dignissimos, porro eaque, quas perferendis saepe numquam animi id error recusandae ipsa obcaecati adipisci ab delectus. Rerum cupiditate expedita error magnam dolorum?</p> -->
+   
+    <form>
+        <div>
+          <label for="firstName">First Name <span>*</span></label>
+          <input id="firstName" type="text">
+          <span class="error-message"></span>
+        </div>
+        <div>
+          <label for="lastName">Last Name <span>*</span></label>
+          <input id="lastName" type="text">
+          <span class="error-message"></span>
+        </div>
+        <div>
+          <label for="phone">Phone <span>*</span></label>
+          <input id="phone" type="text">
+          <span class="error-message"></span>
+        </div>
+        <div>
+          <label for="email">Email <span>*</span></label>
+          <input id="email" type="email">
+          <span class="error-message"></span>
+        </div>
+        <div>
+          <label for="message">Message <span>*</span></label>
+          <textarea id="message"></textarea>
+          <span class="error-message"></span>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            $(".sidebar").toggleClass("hidden")
+            $("header").toggleClass("shifted")
+        })
+    })
+            $(".sing").click(function () {
+                $("form").toggle(500)
+        })
+
+</script>
