@@ -1,124 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My fist page</title>
-    <link rel="stylesheet" href="styal.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styal.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="jquery-3.7.1.min.js"></script>
-</head>
-<body>
-
+    <script>https://cdn.tailwindcss.com</script>
+  </head>
+  <body>
+    <!-- sidebar start -->
     <div class="sidebar">
-        <div class="sing">
+      <div class="sing">
         <i class="fa-solid fa-user fa-xl"></i>
         <h2>Hello,Sing in</h2>
-    </div>
+      </div>
+      <div class="bar">
+        
+       
+       <br> <div class="sid" ></div>
+                <li><i class="fa-solid fa-house fa-xl"></i><span>Home</span></li><br><br>
+                <li><i class="fa-solid fa-envelope fa-xl"></i><span>Emails</span></li>
+                <br><br>
+                <li><i class="fa-solid fa-chart-column fa-xl"></i><span>Charts</span></li><br><br>
+                <li><i class="fa-solid fa-gem fa-xl"></i><span>Premium</span></li><br><br>
+                 <li><i class="fa-solid fa-gear fa-xl"></i><span>setting</span></li><br><br><br><br><br><br><br><br>
+                <li class="login1"><i class="fa-solid fa-right-to-bracket fa-xl"></i><span>Logout</span></li><br>
 
-    <div class="con">
-    <h2>Trending</h2>
-    <br>
-    Best Sellers
-    <br>
-    <br>
-    New Releases
-    <br>
-    <br>
-    Movers and Shakers
-    </div>
-    <br>
-    <hr>
-     <br>
-    <div class="con1">
-        <h3>Digital Content and Devices</h3>
-        <br>
-        <br>
-        Amazon miniTV-FREE entertainment
-        <br>
-        <br>
-        Echo & Alexa
-        <br>
-        <br>
-        Fire TV
-        <br>
-        <br>
-        Kindle E-Readers & eBooks
-        <br>
-        <br>
-        Audible Audiobooks
-        <br>
-        <br>
-        Amazon Prime Video
-        <br>
-        <br>
-        Amazon Prime Music
-        <br>
-        <br>
-    </div>
-    <hr>
-    </div>
-     
-    <header>
-        <div class="logo">
-            <i class="fa-solid fa-bars" id="btn"></i>
-         <h1>Logo</h1>
-        </div>
-    
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Services</li>
-                <li><i class="fa-solid fa-right-to-bracket fa-xl" style="color: #050505;" class="sing1"></i></li>
             </ul>
-        </nav>
-    </header>
-   
-    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquam accusamus et cum est excepturi molestiae sequi ullam expedita amet corporis dolore. Ipsam natus inventore placeat perspiciatis, officia dignissimos, porro eaque, quas perferendis saepe numquam animi id error recusandae ipsa obcaecati adipisci ab delectus. Rerum cupiditate expedita error magnam dolorum?</p> -->
-   
-    <form>
-        <div>
-          <label for="firstName">First Name <span>*</span></label>
-          <input id="firstName" type="text">
-          <span class="error-message"></span>
         </div>
-        <div>
-          <label for="lastName">Last Name <span>*</span></label>
-          <input id="lastName" type="text">
-          <span class="error-message"></span>
-        </div>
-        <div>
-          <label for="phone">Phone <span>*</span></label>
-          <input id="phone" type="text">
-          <span class="error-message"></span>
-        </div>
-        <div>
-          <label for="email">Email <span>*</span></label>
-          <input id="email" type="email">
-          <span class="error-message"></span>
-        </div>
-        <div>
-          <label for="message">Message <span>*</span></label>
-          <textarea id="message"></textarea>
-          <span class="error-message"></span>
-        </div>
-        <input type="submit" value="Submit">
-      </form>
+    </div>
+    
+      </div>      
+    </div>
 
-</body>
+    <!-- sidebar end -->
+
+    <!-- header start -->
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-bars" id="btn"></i>
+        <h1>Logo</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Services</li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- header end -->
+    
+  <div class="main-content">
+<!--     
+    <div class="card">
+     <img src="download (1).jpg" alt="">
+     <img src="download.jpg" alt="">
+    </div> -->
+    <div class="wrapper">
+      <canvas id='c'></canvas>
+      <div class="label">text</div>
+    </div>
+
+
+    <!-- map start -->
+    <div class="responsive-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <style>
+        html {height: 100%;background-color: #f5f6fa;}
+      </style>          
+      
+      <div class="h-full bg-[#f5f6fa]">
+        <div class="w-full max-w-2xl mx-auto p-5">
+          <div class="bg-white rounded-md shadow p-3 sm:p-5">
+          
+            <canvas id="line-chart" class="w-full"></canvas>
+          </div>
+        </div>
+      </div>
+      <title>Calendar minimalist</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      
+      <main>
+        <div class='calendar'>
+          <div class='left'>
+            <p id = 'date'>20</p>
+            <p id = 'week-day'>Tuesday</p>
+          </div>
+          <div class='right'>
+            <p id = 'month'>August</p>
+            <p id = 'year'>2024</p>
+          </div>
+        </div>
+      </main>
+      
+
+
+      <footer>
+        <p>Tahmid Ahemd</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ab deleniti voluptatem, in nobis quos.</p>
+        <div class="socialme">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+        <p class="end">Copyrite by Tahmid Ahemd</p>
+    </footer>
+    </div>
+<!-- map end -->
+    
+  </body>
 </html>
 
 <script>
-    $(document).ready(function () {
-        $("#btn").click(function () {
-            $(".sidebar").toggleClass("hidden")
-            $("header").toggleClass("shifted")
-        })
-    })
-            $(".sing").click(function () {
-                $("form").toggle(500)
-        })
+  $(document).ready(function () {
+    $("#btn").click(function () {
+      $(".sidebar").toggleClass("hidden");
+      $("header").toggleClass("shifted");
+      $(".pera").toggleClass("peara");
+      $(".main-content").toggleClass("shifted");
+    });
+    $(".login1").click(function () {
+      $("form").fadeToggle();
+      $(".pera").fadeToggle();
+    });
+  });
 
+const date = document.getElementById('date');
+const weekDay = document.getElementById('week-day');
+const month = document.getElementById('month');
+const year = document.getElementById('year');
+
+const today = new Date();
+
+const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+const allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+date.innerHTML = today.getDate();
+weekDay.innerHTML = weekDays[today.getDay()];
+month.innerHTML = allMonths[today.getMonth()];
+year.innerHTML = today.getFullYear();
+
+
+var label = document.querySelector(".label");
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+var cw = c.width = 700;
+var ch = c.height = 350;
+var cx = cw / 2,
+  cy = ch / 2;
+var rad = Math.PI / 180;
+var frames = 0;
+
+ctx.lineWidth = 1;
+ctx.strokeStyle = "#999";
+ctx.fillStyle = "#ccc";
+ctx.font = "14px monospace";
+
+var grd = ctx.createLinearGradient(0, 0, 0, cy);
+grd.addColorStop(0, "hsla(167,72%,60%,1)");
+grd.addColorStop(1, "hsla(167,72%,60%,0)");
+
+var oData = {
+  "2008": 10,
+  "2009": 39.9,
+  "2010": 17,
+  "2011": 30.0,
+  "2012": 5.3,
+  "2013": 38.4,
+  "2014": 15.7,
+  "2015": 9.0
+};
+
+var valuesRy = [];
+var propsRy = [];
+for (var prop in oData) {
+
+  valuesRy.push(oData[prop]);
+  propsRy.push(prop);
+}
+
+
+var vData = 4;
+var hData = valuesRy.length;
+var offset = 50.5; //offset chart axis
+var chartHeight = ch - 2 * offset;
+var chartWidth = cw - 2 * offset;
+var t = 1 / 7; // curvature : 0 = no curvature 
+var speed = 2; // for the animation
+
+var A = {
+  x: offset,
+  y: offset
+}
+var B = {
+  x: offset,
+  y: offset + chartHeight
+}
+var C = {
+  x: offset + chartWidth,
+  y: offset + chartHeight
+}
+
+/*
+      A  ^
+	    |  |  
+	    + 25
+	    |
+	    |
+	    |
+	    + 25  
+      |__|_________________________________  C
+      B
+*/
+
+// CHART AXIS -------------------------
+ctx.beginPath();
+ctx.moveTo(A.x, A.y);
+ctx.lineTo(B.x, B.y);
+ctx.lineTo(C.x, C.y);
+ctx.stroke();
+
+// vertical ( A - B )
+var aStep = (chartHeight - 50) / (vData);
+
+var Max = Math.ceil(arrayMax(valuesRy) / 10) * 10;
+var Min = Math.floor(arrayMin(valuesRy) / 10) * 10;
+var aStepValue = (Max - Min) / (vData);
+console.log("aStepValue: " + aStepValue); //8 units
+var verticalUnit = aStep / aStepValue;
+
+var a = [];
+ctx.textAlign = "right";
+ctx.textBaseline = "middle";
+for (var i = 0; i <= vData; i++) {
+
+  if (i == 0) {
+    a[i] = {
+      x: A.x,
+      y: A.y + 25,
+      val: Max
+    }
+  } else {
+    a[i] = {}
+    a[i].x = a[i - 1].x;
+    a[i].y = a[i - 1].y + aStep;
+    a[i].val = a[i - 1].val - aStepValue;
+  }
+  drawCoords(a[i], 3, 0);
+}
+
+//horizontal ( B - C )
+var b = [];
+ctx.textAlign = "center";
+ctx.textBaseline = "hanging";
+var bStep = chartWidth / (hData + 1);
+
+for (var i = 0; i < hData; i++) {
+  if (i == 0) {
+    b[i] = {
+      x: B.x + bStep,
+      y: B.y,
+      val: propsRy[0]
+    };
+  } else {
+    b[i] = {}
+    b[i].x = b[i - 1].x + bStep;
+    b[i].y = b[i - 1].y;
+    b[i].val = propsRy[i]
+  }
+  drawCoords(b[i], 0, 3)
+}
+
+function drawCoords(o, offX, offY) {
+  ctx.beginPath();
+  ctx.moveTo(o.x - offX, o.y - offY);
+  ctx.lineTo(o.x + offX, o.y + offY);
+  ctx.stroke();
+
+  ctx.fillText(o.val, o.x - 2 * offX, o.y + 2 * offY);
+}
+//----------------------------------------------------------
+
+// DATA
+var oDots = [];
+var oFlat = [];
+var i = 0;
+
+for (var prop in oData) {
+  oDots[i] = {}
+  oFlat[i] = {}
+
+  oDots[i].x = b[i].x;
+  oFlat[i].x = b[i].x;
+
+  oDots[i].y = b[i].y - oData[prop] * verticalUnit - 25;
+  oFlat[i].y = b[i].y - 25;
+
+  oDots[i].val = oData[b[i].val];
+  
+  i++
+}
+
+
+
+///// Animation Chart ///////////////////////////
+//var speed = 3;
+function animateChart() {
+  requestId = window.requestAnimationFrame(animateChart);
+  frames += speed; //console.log(frames)
+  ctx.clearRect(60, 0, cw, ch - 60);
+  
+  for (var i = 0; i < oFlat.length; i++) {
+    if (oFlat[i].y > oDots[i].y) {
+      oFlat[i].y -= speed;
+    }
+  }
+  drawCurve(oFlat);
+  for (var i = 0; i < oFlat.length; i++) {
+      ctx.fillText(oDots[i].val, oFlat[i].x, oFlat[i].y - 25);
+      ctx.beginPath();
+      ctx.arc(oFlat[i].x, oFlat[i].y, 3, 0, 2 * Math.PI);
+      ctx.fill();
+    }
+
+  if (frames >= Max * verticalUnit) {
+    window.cancelAnimationFrame(requestId);
+    
+  }
+}
+requestId = window.requestAnimationFrame(animateChart);
+
+/////// EVENTS //////////////////////
+c.addEventListener("mousemove", function(e) {
+  label.innerHTML = "";
+  label.style.display = "none";
+  this.style.cursor = "default";
+
+  var m = oMousePos(this, e);
+  for (var i = 0; i < oDots.length; i++) {
+
+    output(m, i);
+  }
+
+}, false);
+
+function output(m, i) {
+  ctx.beginPath();
+  ctx.arc(oDots[i].x, oDots[i].y, 20, 0, 2 * Math.PI);
+  if (ctx.isPointInPath(m.x, m.y)) {
+    //console.log(i);
+    label.style.display = "block";
+    label.style.top = (m.y + 10) + "px";
+    label.style.left = (m.x + 10) + "px";
+    label.innerHTML = "<strong>" + propsRy[i] + "</strong>: " + valuesRy[i] + "%";
+    c.style.cursor = "pointer";
+  }
+}
+
+// CURVATURE
+function controlPoints(p) {
+  // given the points array p calculate the control points
+  var pc = [];
+  for (var i = 1; i < p.length - 1; i++) {
+    var dx = p[i - 1].x - p[i + 1].x; // difference x
+    var dy = p[i - 1].y - p[i + 1].y; // difference y
+    // the first control point
+    var x1 = p[i].x - dx * t;
+    var y1 = p[i].y - dy * t;
+    var o1 = {
+      x: x1,
+      y: y1
+    };
+
+    // the second control point
+    var x2 = p[i].x + dx * t;
+    var y2 = p[i].y + dy * t;
+    var o2 = {
+      x: x2,
+      y: y2
+    };
+
+    // building the control points array
+    pc[i] = [];
+    pc[i].push(o1);
+    pc[i].push(o2);
+  }
+  return pc;
+}
+
+function drawCurve(p) {
+
+  var pc = controlPoints(p); // the control points array
+
+  ctx.beginPath();
+  //ctx.moveTo(p[0].x, B.y- 25);
+  ctx.lineTo(p[0].x, p[0].y);
+  // the first & the last curve are quadratic Bezier
+  // because I'm using push(), pc[i][1] comes before pc[i][0]
+  ctx.quadraticCurveTo(pc[1][1].x, pc[1][1].y, p[1].x, p[1].y);
+
+  if (p.length > 2) {
+    // central curves are cubic Bezier
+    for (var i = 1; i < p.length - 2; i++) {
+      ctx.bezierCurveTo(pc[i][0].x, pc[i][0].y, pc[i + 1][1].x, pc[i + 1][1].y, p[i + 1].x, p[i + 1].y);
+    }
+    // the first & the last curve are quadratic Bezier
+    var n = p.length - 1;
+    ctx.quadraticCurveTo(pc[n - 1][0].x, pc[n - 1][0].y, p[n].x, p[n].y);
+  }
+
+  //ctx.lineTo(p[p.length-1].x, B.y- 25);
+  ctx.stroke();
+  ctx.save();
+  ctx.fillStyle = grd;
+  ctx.fill();
+  ctx.restore();
+}
+
+function arrayMax(array) {
+  return Math.max.apply(Math, array);
+};
+
+function arrayMin(array) {
+  return Math.min.apply(Math, array);
+};
+
+function oMousePos(canvas, evt) {
+  var ClientRect = canvas.getBoundingClientRect();
+  return { //objeto
+    x: Math.round(evt.clientX - ClientRect.left),
+    y: Math.round(evt.clientY - ClientRect.top)
+  }
+}
 </script>
